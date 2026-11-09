@@ -1,0 +1,99 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memória - A Noiva-Cadáver</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="background"></div>
+
+    <main class="game-container">
+
+        <header>
+            <p class="subtitle">UM JOGO DE MEMÓRIA GÓTICO</p>
+            <h1>A Noiva-Cadáver</h1>
+            <p class="description">
+                Encontre os seis pares e descubra os segredos
+                do mundo dos mortos...
+            </p>
+        </header>
+
+        <section class="dashboard">
+
+            <div class="info">
+                <span>JOGADAS</span>
+                <strong id="moves">0</strong>
+            </div>
+
+            <div class="info">
+                <span>TEMPO</span>
+                <strong id="timer">00:00</strong>
+            </div>
+
+            <div class="info">
+                <span>PARES</span>
+                <strong id="pairs">0 / 6</strong>
+            </div>
+
+        </section>
+
+        <section id="game-board" class="game-board">
+            <!-- As cartas serão criadas pelo JavaScript -->
+        </section>
+
+        <button id="restart" class="restart-button">
+            ↻ Reiniciar jogo
+        </button>
+
+        <footer>
+            <p>Inspirado no universo de Tim Burton</p>
+        </footer>
+
+    </main>
+
+    <!-- Tela de vitória -->
+
+    <div id="victory-screen" class="victory-screen hidden">
+
+        <div class="victory-box">
+
+            <div class="victory-icon">💙</div>
+
+            <h2>Você conseguiu!</h2>
+
+            <p>
+                Todos os pares foram encontrados.
+                O amor venceu até a morte!
+            </p>
+
+            <div class="final-results">
+
+                <div>
+                    <span>Jogadas realizadas</span>
+                    <strong id="final-moves">0</strong>
+                </div>
+
+                <div>
+                    <span>Tempo utilizado</span>
+                    <strong id="final-time">00:00</strong>
+                </div>
+
+            </div>
+
+            <button id="play-again" class="restart-button">
+                Jogar novamente
+            </button>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
